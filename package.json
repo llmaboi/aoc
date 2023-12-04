@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "bun --watch src/index.ts",
     "test": "bun test",
-    "tdd": "bun test --watch"
+    "tdd": "bun test --watch",
+    "gen": "./src/generateFileSet.sh"
   },
   "author": "",
   "license": "ISC"
