@@ -14,13 +14,13 @@ day_template=$(cat ./src/day.ts)
 day_test_template=$(cat ./src/day.test.ts)
 
 # Echo template content into the new file
-echo "$day_template" > "$directory/day$day.ts"
-echo "$day_test_template" > "$directory/day$day.test.ts"
+echo "$day_template" > "src/$directory/day$day.ts"
+echo "$day_test_template" > "src/$directory/day$day.test.ts"
 
 # touch "$directory/day$day.ts"
 
-touch "$directory/day$day.example.data.txt"
-touch "$directory/day$day.data.txt"
+touch "src/$directory/day$day.example.data.txt"
+touch "src/$directory/day$day.data.txt"
 
 
 echo "File $directory/day$day(.ts,.test.ts,example.data.txt,data.txt) created successfully"
